@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-h);
+    margin: 0px 100px;
+}
+:root {
+    --text-color: #999;
+    --background-color : #F6D238;
+    --box-shadow : 5px 5px 30px rgba(0,0,0,0.1);
+    --accent-glow: rgba(0, 198, 167, 0.07);
+    --font-h: 'Outfit', sans-serif;
+    --font-b: 'Nunito', sans-serif;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.logo-title span {
+    color: var(--background-color);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.nav-list {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.nav-list:hover {
+    background-color: var(--background-color);
+    color: black;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--background-color);
+    font-weight: bold;
+    border: 2px solid #F6D238;
+    box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #f1f1f1;
+    transform: rotate(5deg);
+}
+
+/* frist-content */
+
+.frist-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.left {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 500px; 
+    gap: 15px;
+}
+
+.left img {
+    position: absolute;
+    border: 8px solid #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+}
+
+.nazuna {
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.nazuna:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.remi {
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    left: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.remi:hover {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.right {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.right-text {
+    color: var(--background-color);
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.right-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.right-paragraphe {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+.buttons-right {
+    align-items: center;
+    gap: 20px;
+    display: flex;
+}
+
+.watch-cercle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.watch-cercle:hover {
+    transform: scale(1.5);
+}
+
+.watch-remi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.wacth-text {
+    font-size: 14px;
+}
+
+/* second-content */
+
+
+.all-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.destination-second {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.second-par {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraphe-second {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.cheveron button {
+    width: 40px;
+    border: none;
+    height: 40px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.chevron-frist {
+    margin-left: 50px;
+}
+.cheveron button img {
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+.cheveron button .left-chev:hover {
+    transform: rotate(-10deg);
+}
+
+.cheveron button img:hover {
+    transform: rotate(10deg);
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.list-images{
+    cursor: pointer;
+    width: 20%;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    border: 2px solid #fff;
+    position: relative;
+    height: 350px;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.list-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+} 
+
+.desc-images p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.desc-images h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.desc-images {
+    background: #fff;
+    padding: 25px;
+    align-items: center;
+    transform: translateY(350px);
+    transition: 0.5s;
+}
+
+.list-images:hover .desc-images {
+    transform: translateY(-125px);
+}

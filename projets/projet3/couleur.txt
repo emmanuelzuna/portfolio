@@ -1,0 +1,26 @@
+:root {
+    --bg-0: #08090e;
+    --bg-1: #0f1119;
+    --bg-2: #161924;
+    --bg-3: #1d2133;
+    --bg-4: #262b3e;
+    --accent: #00c6a7;
+    --accent-dim: rgba(0, 198, 167, 0.13);
+    --accent-glow: rgba(0, 198, 167, 0.07);
+    --text-0: #edf0fa;
+    --text-1: #9ba3c0;
+    --text-2: #565e7a;
+    --border: rgba(255, 255, 255, 0.055);
+    --border-h: rgba(255, 255, 255, 0.1);
+    --border-accent: rgba(0, 198, 167, 0.35);
+    --danger: #ff4d6d;
+    --danger-dim: rgba(255, 77, 109, 0.12);
+    --r-sm: 8px;
+    --r: 14px;
+    --r-lg: 20px;
+    --r-xl: 26px;
+    --sidebar-w: 360px;
+    --tr: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-h: 'Outfit', sans-serif;
+    --font-b: 'Nunito', sans-serif;
+}

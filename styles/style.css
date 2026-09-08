@@ -1,0 +1,737 @@
+:root {
+  --bg: #08070F;
+  --bg-alt: #0D0C18;
+  --surface: #12101F;
+  --surface-2: #17152A;
+  --border: #232037;
+  --accent: #6366F1;
+  --accent-light: #8B8FFF;
+  --accent-dim: rgba(99, 102, 241, 0.12);
+  --text: #E4E4EC;
+  --text-muted: #8A8A9E;
+  --text-dim: #55536A;
+  --font-display: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-mono: Consolas, "SFMono-Regular", Menlo, monospace;
+  --max-width: 1180px;
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/*  NAZUNA NANAKUSA IMPORTANT*/
+html {
+  scroll-behavior: smooth;
+}
+
+.etiquette-nezuko {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--accent-light);
+  margin-bottom: 14px;
+}
+
+.accent-itachi {
+  color: var(--accent-light);
+}
+
+.bouton-saitama {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 27px;
+  border-radius: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.bouton-saitama-principal {
+  background: var(--accent);
+  color: #fff;
+}
+
+.bouton-saitama-principal:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.bouton-saitama-fantome {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.bouton-saitama-fantome:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.bouton-saitama-pleine {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/*Naruto*/
+.menu-naruto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #12101F;
+  border-bottom: 1px solid transparent;
+}
+
+.menu-naruto-interieur {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-naruto-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.menu-naruto-logo .menu-naruto-point {
+  color: var(--accent);
+}
+
+.menu-naruto-liens {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu-naruto-liens a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.menu-naruto-liens a:not(.menu-naruto-action):hover {
+  color: var(--text);
+}
+
+.menu-naruto-liens a:not(.menu-naruto-action)::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent-light);
+  transition: width 0.25s ease;
+}
+
+.menu-naruto-liens a:not(.menu-naruto-action):hover::after {
+  width: 100%;
+}
+
+.menu-naruto-action {
+  background: var(--accent-dim);
+  color: var(--accent-light);
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.menu-naruto-action:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.menu-naruto-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.menu-naruto-burger span {
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+/* Goku */
+.heros-goku {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 128px 32px 64px;
+  overflow: hidden;
+}
+
+.heros-goku-toile {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+}
+
+.heros-goku::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}
+
+.heros-goku-contenu {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  text-align: center;
+}
+
+.heros-goku-titre {
+  font-family: var(--font-display);
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.05;
+  background: linear-gradient(180deg, #fff 0%, var(--accent-light) 140%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 24px;
+}
+
+.heros-goku-soustitre {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 37px;
+}
+
+
+/* A PROPOS (Eren / Armin) */
+
+.cadre-levi {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 112px 32px;
+}
+
+
+.cadre-levi-nuit>* {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cadre-levi-entete {
+  margin-bottom: 51px;
+  max-width: 640px;
+}
+
+.cadre-levi-entete h2 {
+  font-family: var(--font-display);
+  font-size: 29px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.cadre-levi-description {
+  color: var(--text-muted);
+  margin-top: 13px;
+  font-size: 16px;
+}
+
+.apropos-eren-grille {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.apropos-eren-texte p {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.apropos-eren-texte strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.apropos-eren-faits {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  border-left: 1px solid var(--border);
+  padding-left: 29px;
+}
+
+.fait-armin {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fait-armin-etiquette {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fait-armin-valeur {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* COMPETENCES (Vegeta) */
+.competences-vegeta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.competences-vegeta-titre {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 19px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--border);
+}
+
+.competences-vegeta-rangee {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.puce-trunks {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.puce-trunks:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+  background: var(--accent-dim);
+  transform: translateY(-2px);
+}
+
+/* PROJETS (Sasuke)*/
+.projets-sasuke {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.projets-sasuke-carte {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 29px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.projets-sasuke-carte:hover {
+  transform: translateY(-6px);
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.6);
+}
+
+.projets-sasuke-image-lien {
+  display: block;
+  margin: -29px -29px 19px;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+
+.projets-sasuke-image {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--surface-2);
+  transition: transform 0.3s ease;
+}
+
+.projets-sasuke-carte:hover .projets-sasuke-image {
+  transform: scale(1.04);
+}
+
+.projets-sasuke-carte-haut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.projets-sasuke-etiquette {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-light);
+  background: var(--accent-dim);
+  padding: 5px 11px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.projets-sasuke-index {
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+.projets-sasuke-carte h3 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  margin-bottom: 11px;
+  font-weight: 600;
+}
+
+.projets-sasuke-carte p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 21px;
+  flex-grow: 1;
+}
+
+.projets-sasuke-stack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+
+.projets-sasuke-stack span {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.projets-sasuke-lien {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent-light);
+  transition: gap 0.2s ease;
+}
+
+.projets-sasuke-lien:hover {
+  text-decoration: underline;
+}
+
+/*PARCOURS (Mikasa) */
+.parcours-mikasa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.parcours-mikasa-titre {
+  font-family: var(--font-display);
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: var(--accent-light);
+}
+
+.parcours-mikasa-etape {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 29px;
+  border-left: 2px solid var(--border);
+}
+
+.parcours-mikasa-annee {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.parcours-mikasa-etape h4 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  margin: 6px 0 5px;
+  font-weight: 600;
+}
+
+.parcours-mikasa-etape p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* CONTACT (Nazuna Nanakusa)*/
+.contact-nazuna {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 56px;
+}
+
+.contact-nazuna-formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.contact-nazuna-ligne {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-nazuna-ligne label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-nazuna-ligne input,
+.contact-nazuna-ligne textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+
+.contact-nazuna-ligne input::placeholder,
+.contact-nazuna-ligne textarea::placeholder {
+  color: var(--text-dim);
+}
+
+.contact-nazuna-ligne input:focus,
+.contact-nazuna-ligne textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.contact-nazuna-note {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent-light);
+  min-height: 19px;
+}
+
+.contact-nazuna-info {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  padding-left: 32px;
+  border-left: 1px solid var(--border);
+}
+
+.contact-nazuna-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-nazuna-item-etiquette {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-nazuna-item-valeur {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-nazuna-item-valeur:hover {
+  color: var(--accent-light);
+}
+
+.contact-nazuna-reseaux {
+  display: flex;
+  gap: 19px;
+}
+
+.contact-nazuna-reseaux a {
+  font-weight: 500;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-nazuna-reseaux a:hover {
+  color: var(--accent-light);
+  border-color: var(--accent-light);
+}
+
+/* PIED DE PAGE (Ko Yamori) */
+.pied-ko {
+  text-align: center;
+  padding: 40px 32px;
+  color: var(--text-dim);
+  font-size: 14px;
+  border-top: 1px solid var(--border);
+}
+
+/* RESPONSIVE */
+
+
+
+
+/* telephone */
+@media (max-width: 480px) {
+  .menu-naruto-liens {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 19px;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+   
+  .menu-naruto-liens-ouvert {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .menu-naruto-burger {
+    display: flex;
+  }
+
+  .cadre-levi {
+    padding: 64px 24px;
+  }
+
+  .heros-goku {
+    padding: 112px 24px 48px;
+  }
+
+  .heros-goku-titre {
+    font-size: 42px;
+  }
+
+  .heros-goku-soustitre {
+    font-size: 16px;
+  }
+
+  .heros-goku-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cadre-levi-entete h2 {
+    font-size: 26px;
+  }
+
+  .heros-goku-titre {
+    font-size: 34px;
+  }
+
+  .cadre-levi {
+    padding: 48px 18px;
+  }
+
+  .heros-goku {
+    padding: 96px 18px 40px;
+  }
+
+  .menu-naruto-interieur {
+    padding: 14px 18px;
+  }
+
+  .contact-nazuna-info {
+    padding-left: 0;
+  }
+
+  .projets-sasuke-image {
+    height: 150px;
+  }
+  .projets-sasuke { 
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* tablette */
+@media (max-width: 900px) {
+
+  .apropos-eren-grille,
+  .contact-nazuna {
+    grid-template-columns: 1fr;
+  }
+
+  .apropos-eren-faits,
+  .contact-nazuna-info {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 29px;
+  }
+
+  .parcours-mikasa {
+    grid-template-columns: 1fr;
+  }
+  .projets-sasuke { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

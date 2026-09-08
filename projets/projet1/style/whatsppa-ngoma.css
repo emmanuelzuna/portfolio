@@ -1,0 +1,237 @@
+
+:root {
+    --main-background-color: #FCF5EB;
+    --green-variant : #25D366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+div.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 4px;
+}
+
+img.what {
+    width: 25px;
+    height: 25px;
+}
+
+
+div.logo .whatsapp {
+    color: var(--green-variant);
+    font-size: 18px;
+}
+
+/* LITLE BODY */
+section.content {
+    box-shadow: 0 1px 0 1px #ddd;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    justify-content: center;
+    width: 725px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+img.phone-computeur {
+    width: 50px;
+    height: 50px;
+}
+
+div.description {
+    margin: 1px 0px;
+}
+
+div.description .download-one {
+    background: white;
+}
+div.description .text {
+    background: white;
+    font-size: 14px;
+}
+div.phone {
+    background: white;
+}
+
+.download-one {
+    font-size: 16px;
+    background: none;
+    color: black;
+    font-weight: normal;
+}
+
+div.download-img {
+    display: flex;
+    background-color: var(--green-variant);
+    padding: 5px 15px;
+    border: 1px solid rgb(51, 50, 50);
+    border-radius: 40px;
+    gap: 1px;
+    align-items: center;
+    margin: 1px 20px;
+    box-shadow: 0 0 0 1px #ddd;
+}
+button.download-last {
+    font-size: 15px;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+img.dow {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   margin-left: 1px;
+}
+
+/* BIG-BODY */
+
+.hero-body {
+    background: #ffffff;
+    width: 380px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 0 2px #ddd;
+    padding: 30px 195px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+h1.titre {
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: normal;
+    background: white;
+}
+
+p.texte {
+    background: white;
+    color: #000000d8;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 16px;
+    background: white;
+}
+
+div.button-next {
+    background: white;
+}
+
+select {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 16px;
+    background: white;
+}
+
+div.from-congo {
+    background: white;
+}
+
+div.input-tel {
+    background: white;
+}
+
+button.next {
+    margin-top: 45px;
+    background: #1fa675;
+    border: white;
+    padding: 12px 31px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a.b {
+    text-decoration: none;
+    background-color: #1fa675;
+    background: none;
+    color: white;
+}
+
+button.next:hover {
+    background: #178f68;
+}
+
+div.qr {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+a.qr-log {
+    text-decoration-color:  #1fa675;
+    color: #141414e8;
+    font-size: 15px;
+    text-decoration-thickness: 1.5px;
+    background-color: #ffffff;
+}
+
+section.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 37px;
+}
+
+a.end-b {
+    text-decoration-color: #25D366;
+    color: #141414e8;
+    text-decoration-thickness: 1.5px;
+}
+
+/* FOOTER */
+
+div.fin {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img.congo {
+    width: 42px;
+    height: 42px;
+}
+
+
+
+
+
+
+.img-pays {
+    width: 15px;
+}

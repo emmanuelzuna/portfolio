@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-0);
+    font-family: var(--font-b);
+}
+
+:root {
+    --bg-0: #08090e;
+    --bg-1: #0f1119;
+    --bg-2: #161924;
+    --bg-3: #1d2133;
+    --bg-4: #262b3e;
+    --accent: #00c6a7;
+    --accent-dim: rgba(0, 198, 167, 0.13);
+    --accent-glow: rgba(0, 198, 167, 0.07);
+    --text-0: #edf0fa;
+    --text-1: #9ba3c0;
+    --text-2: #565e7a;
+    --border: rgba(255, 255, 255, 0.055);
+    --border-h: rgba(255, 255, 255, 0.1);
+    --border-accent: rgba(0, 198, 167, 0.35);
+    --danger: #ff4d6d;
+    --danger-dim: rgba(255, 77, 109, 0.12);
+    --r-sm: 8px;
+    --r: 14px;
+    --r-lg: 20px;
+    --r-xl: 26px;
+    --sidebar-w: 360px;
+    --tr: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-h: 'Outfit', sans-serif;
+    --font-b: 'Nunito', sans-serif;
+}
+
+
+img {
+    border-radius: 8px;
+    width: 50px;
+    padding: 8px 8px;
+    background-color: var(--accent);
+    transition: 0.3s;
+}
+
+img:hover {
+    background-color: var(--bg-4);
+    padding: 8px 15px;
+}
+
+h2 {
+    color: var(--text-0);
+}
+
+.message_itachi {
+    color: var(--text-1);
+    font-size: 15px;
+
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-0);
+    font-family: var(--font-b);
+}
+
+main {
+    
+    box-shadow: 5px 5px 10px rgb(0, 0, 1, 0.5);
+    border-radius: 8px;
+}
+.nazuna {
+    border-radius: 8px;
+    position: relative;
+    padding: 35px 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tiitre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexion_inscription {
+    border: 0.5px solid var(--bg-4);
+    border-radius: 10px;
+    position: absolute;
+    background-color: var(--bg-1);
+    padding: 15px 5px;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    margin-top: -60px;
+    margin-bottom: 25px;
+}
+
+
+.yamori_connexion {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: var(--bg-3);
+    position: relative;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 10px 53px;
+    text-decoration: none;
+    color: var(--text-0);
+    transition: 0.3.s;
+}
+
+.yamori_connexion:hover {
+    background-color: var(--bg-1);
+    position: relative;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 10px 53px;
+    text-decoration: none;
+    color: var(--text-0);
+}
+
+.yamori_inscription {
+    position: relative;
+    background-color: var(--bg-1);
+    font-size: 13px;
+    border: none;
+    padding: 10px 53px;
+    text-decoration: none;
+    color: var(--text-1);
+    transition: 0.3s;
+}
+
+.yamori_inscription:hover {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: var(--bg-3);
+    position: relative;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 10px 53px;
+    text-decoration: none;
+    color: var(--text-0);
+}
+
+.formulaire_naruto1 {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.formulaire_naruto2 {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.formulaire {
+    margin-top: 120px;
+}
+
+label {
+    color: var(--bg-4);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input {
+    padding: 15px 110px;
+    border: 0.5px solid var(--bg-4);
+    border-radius: 8px;
+    background-color: var(--bg-1);
+}
+
+
+.btn {
+    padding: 15px 155px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--accent);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--bg-4);
+    color: var(--text-0);
+}
+
+
+.footer_end_nazuna {
+    color: var(--bg-4);
+    font-size: 14px;
+}
+
+.nanakusa {
+    color: var(--text-0);
+}
+

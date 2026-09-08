@@ -1,0 +1,270 @@
+
+:root {
+    --main-background-color: #FCF5EB;
+    --green-variant : #25D366;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+div.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 4px;
+}
+
+img.what {
+    width: 35px;
+    height: 35px;
+}
+
+div.logo .whatsapp {
+    color: var(--green-variant);
+    font-size: 18px;
+}
+
+/* LITLE BODY */
+section.content {
+    box-shadow: 0 1px 0 1px #ddd;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    justify-content: center;
+    width: 725px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+img.phone-computeur {
+    width: 50px;
+    height: 50px;
+}
+
+div.description {
+    margin: 1px 0px;
+}
+
+div.description .download-one {
+    background: white;
+}
+div.description .text {
+    background: white;
+    font-size: 14px;
+}
+div.phone {
+    background: white;
+}
+
+.download-one {
+    font-size: 16px;
+    background: none;
+    color: black;
+    font-weight: normal;
+}
+
+div.download-img {
+    display: flex;
+    background-color: var(--green-variant);
+    padding: 5px 15px;
+    border: 1px solid rgb(51, 50, 50);
+    border-radius: 40px;
+    gap: 1px;
+    align-items: center;
+    margin: 1px 20px;
+    box-shadow: 0 0 0 1px #ddd;
+}
+button.download-last {
+    font-size: 15px;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+img.dow {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   margin-left: 1px;
+}
+
+/* BIG-BODY */
+
+div.full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr {
+    background: white;
+    padding: 35px 60px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid black;
+    box-shadow: 0 0 0 2px #ddd;
+    width: 650px;
+    margin: 0 auto;
+}
+
+h1.steps-log {
+    font-size: 26px;
+    margin-bottom: 35px;
+    font-weight: normal;
+    background: white;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+    gap: 15px;
+    background: white;
+    padding: 5px 1px;
+}
+
+.two {
+    align-items: center;
+}
+
+p.m {
+    margin-top: 33px;
+    background: white;
+    color: #000000b4;
+}
+
+img.k {
+    margin-top: 32px;
+    margin-left: 1px;
+}
+
+label {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+
+.point {
+    width: 20px;
+    height: 25px;
+}
+
+ul {
+    background: white;
+}
+
+ul.steps {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+img.wha1 {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+span.number {
+    background: white;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+}
+
+section.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 32px;
+}
+
+a.end-b {
+    text-decoration-color: #25D366;
+    color: #141414e8;
+    text-decoration-thickness: 1.5px;
+}
+
+input {
+    margin-top: 32px;
+}
+
+img.chaine {
+    width: 20px;
+    height: 25px;
+}
+.end-r {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    margin-top: 37px;
+    font-size: 13px;
+}
+
+img.code {
+    width: 200px;
+    height: 215px;
+}
+
+.QR-code {
+    background: white;
+}
+
+.img-qr {
+    background: white;
+}
+
+.log {
+    background: white;
+}
+
+.phone {
+    text-decoration-color: #25D366;
+    color: #141414e8;
+    text-decoration-thickness: 1.5px;
+    background: white;
+}
+
+.stay {
+    background: white;
+}
+
+/* FOOTER */
+
+div.fin {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img.congo {
+    width: 42px;
+    height: 42px;
+}
+
