@@ -627,7 +627,29 @@ html {
 }
 
 /* RESPONSIVE */
+/* tablette */
+@media (max-width: 900px) {
 
+  .apropos-eren-grille,
+  .contact-nazuna {
+    grid-template-columns: 1fr;
+  }
+
+  .apropos-eren-faits,
+  .contact-nazuna-info {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 29px;
+  }
+
+  .parcours-mikasa {
+    grid-template-columns: 1fr;
+  }
+  .projets-sasuke { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /* telephone */
 @media (max-width: 480px) {
@@ -696,26 +718,4 @@ html {
   }
 }
 
-/* tablette */
-@media (max-width: 900px) {
 
-  .apropos-eren-grille,
-  .contact-nazuna {
-    grid-template-columns: 1fr;
-  }
-
-  .apropos-eren-faits,
-  .contact-nazuna-info {
-    border-left: none;
-    border-top: 1px solid var(--border);
-    padding-left: 0;
-    padding-top: 29px;
-  }
-
-  .parcours-mikasa {
-    grid-template-columns: 1fr;
-  }
-  .projets-sasuke { 
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
